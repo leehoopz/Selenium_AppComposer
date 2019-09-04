@@ -18,7 +18,7 @@ if __name__ =='__main__':
     suite = creat_suite()
     file_prefix = time.strftime("%Y-%m-%d %H_%M_%S", time.localtime())
     print(file_prefix)
-    fp = open("./" + file_prefix + "_result.html", "wb")
+    fp = open("./Report/" + file_prefix + "_result.html", "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"Robot测试报告", description=u"测试用例执行情况",verbosity=2)
     runner.run(suite)
     fp.close()

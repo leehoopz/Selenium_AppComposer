@@ -7,10 +7,8 @@ project_list_01_css_selector ="app-home-item.ng-star-inserted:nth-child(1) > div
 
 
 #测试数据：
-data_base_url= "http://132.186.238.50:8081/" #首页地址
-#data_base_url= "http://192.168.0.11:8081/" #首页地址
-#data_base_url= "http://132.186.242.84:8081/" #首页地址
-#data_base_url= "http://192.168.104.114:8081/" #首页地址
+#data_base_url= "http://132.186.238.50:8081/" #首页地址
+data_base_url= "http://192.168.104.111:8081/" #首页地址
 data_username = "lihu" #登陆用户名
 data_password = "1"    #登陆密码
 
