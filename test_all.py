@@ -3,6 +3,7 @@ import unittest
 import HTMLTestRunner
 import webapp_login,webapp_logout,webapp_create_project,webapp_delete_project
 import time
+from log.user_log import UserLog
 
 def creat_suite():
     #print("创建测试套")

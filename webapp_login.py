@@ -1,16 +1,24 @@
 # -*- coding: UTF-8 -*-
 import unittest
+import os
 import time
 from selenium import webdriver
 from time import sleep
 import data_config
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
+from log.user_log import UserLog
+
+log = UserLog()
+logger= log.get_log()
 
 class LoginTestCase(unittest.TestCase):
     def setUp(self):
         print("测试开始")
         self.driver = webdriver.Firefox()
+
+        logger.info("this is Firfox")
+        log.close_log()
         self.driver.implicitly_wait(20)
         #self.base_url = "http://192.168.0.11:8081"
         self.base_url = data_config.data_base_url
